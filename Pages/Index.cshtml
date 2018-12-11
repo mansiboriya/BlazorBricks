@@ -1,0 +1,172 @@
+﻿@page "/"
+@{
+    var nextRows = boardViewModel.Next.Max(n => n.Row) + 1;
+    var nextColumns = boardViewModel.Next.Max(n => n.Col) + 1;
+}
+<div class="inside-page">
+    <header>
+        <img src="img/Title.png" />
+    </header>
+    <div class="HolyGrail-body">
+        <nav>
+            <div class="stats">
+                <StatsInfo Label="SCORE"
+                           Value="@boardViewModel.Score" />
+
+                <StatsInfo Label="HI SCORE"
+                           Value="@boardViewModel.HiScore" />
+
+                <StatsInfo Label="LINES"
+                           Value="@boardViewModel.Lines" />
+
+                <StatsInfo Label="LEVEL"
+                           Value="@boardViewModel.Level" />
+                <div class="statsLine next-container">
+                    <div>NEXT</div>
+                    <div>
+                        <div class="statsLine next-piece piece-rows-@nextRows piece-columns-@nextColumns">
+                            <BricksBoard Bricks="@boardViewModel.Next" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main>
+
+            @if (BlazorBricks.Core.GameManager.Instance.Presenter.IsGameOver)
+            {
+                <div>
+                    <div>
+                        <button @onclick(StartTickLoop)>START NEW GAME</button>
+                    </div>
+                    <br />
+                    <br />
+                    <br />
+                    <div>BLAZOR BRICKS</div>
+                    <div>©2018 MARCELO RICARDO DE OLIVEIRA</div>
+                    <br />
+                    <br />
+                    <div>
+                        MADE FOR CODE PROJECT <br />
+                        (<span><a target="_blank" href="http://www.codeproject.com">http://www.codeproject.com</a></span>)
+                    </div>
+                    <br />
+                    <div>
+                        <img src="img/Bob.png" class="bob" />
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="board">
+                    <BricksBoard Bricks="@boardViewModel.Bricks" />
+                </div>
+            }
+
+        </main>
+        <aside>
+            <div class="stats">
+                <div class="statsLine next-container">
+                    <div>NEXT</div>
+                    <div>
+                        <div class="statsLine next-piece piece-rows-@nextRows piece-columns-@nextColumns">
+                            <BricksBoard Bricks="@boardViewModel.Next" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <footer>
+        <img class="wa-logo" src="/img/WebAssembly.svg" />
+    </footer>
+</div>
+<div class="as-console-wrapper"><div class="as-console"></div></div>
+
+
+<script>
+
+    const assemblyName = 'BlazorBricks';
+    const namespace = 'BlazorBricks';
+    const typeName = 'OnKeyUp';
+    const methodName = 'Handler';
+
+    const onkeyupMethod = Blazor.platform.findMethod(
+        assemblyName,
+        namespace,
+        typeName,
+        methodName
+    );
+
+    document.onkeyup = function (evt) {
+        evt = evt || window.event;
+        const keyCode = Blazor.platform.toDotNetString(evt.keyCode.toString());
+        Blazor.platform.callMethod(onkeyupMethod, null, [keyCode]);
+
+    };
+
+    function onKeyUp(element, evt) {
+        const char = Blazor.platform.toDotNetString(evt.key)
+        Blazor.platform.callMethod(onkeyupMethod, null, [char]);
+    }
+</script>
+@functions {
+    BlazorBricks.Core.BoardViewModel boardViewModel;
+
+    protected override async Task OnInitAsync()
+    {
+        OnKeyUp.Action = async value =>
+        {
+            ConsoleKey consoleKey = (ConsoleKey)Enum.Parse(typeof(ConsoleKey), value);
+
+            var presenter = BlazorBricks.Core.GameManager.Instance.Presenter;
+
+            switch (consoleKey)
+            {
+                case ConsoleKey.LeftArrow:
+                    presenter.MoveLeft();
+                    break;
+                case ConsoleKey.RightArrow:
+                    presenter.MoveRight();
+                    break;
+                case ConsoleKey.UpArrow:
+                    presenter.Rotate90();
+                    break;
+                case ConsoleKey.DownArrow:
+                    presenter.MoveDown();
+                    break;
+                default:
+                    break;
+            }
+            this.StateHasChanged();
+        };
+
+        boardViewModel = BlazorBricks.Core.GameManager.Instance.CurrentBoard;
+
+        Object thisLock = new Object();
+        BlazorBricks.Core.GameManager.Instance.Presenter.Updated
+        += (obj, e) =>
+        {
+            lock (thisLock)
+            {
+                boardViewModel = BlazorBricks.Core.GameManager.Instance.CurrentBoard;
+                this.StateHasChanged();
+            };
+        };
+
+        InitializeBoard();
+    }
+
+    void InitializeBoard()
+    {
+        BlazorBricks.Core.GameManager.Instance.Presenter.InitializeBoard();
+        boardViewModel = BlazorBricks.Core.GameManager.Instance.CurrentBoard;
+
+        this.StateHasChanged();
+    }
+
+    public void StartTickLoop()
+    {
+        BlazorBricks.Core.GameManager.Instance.Presenter.StartTickLoop();
+    }
+}

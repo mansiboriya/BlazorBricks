@@ -33,6 +33,7 @@
         </nav>
         <main>
 
+
             @if (BlazorBricks.Core.GameManager.Instance.Presenter.IsGameOver)
             {
                 <div>
@@ -42,18 +43,13 @@
                     <br />
                     <br />
                     <br />
-                    <div>BLAZOR BRICKS</div>
-                    <div>©2018 MARCELO RICARDO DE OLIVEIRA</div>
+                    <div>BRICKS Game Using Blazor</div>
+                    <div>Enjoy!!</div>
                     <br />
                     <br />
-                    <div>
-                        MADE FOR CODE PROJECT <br />
-                        (<span><a target="_blank" href="http://www.codeproject.com">http://www.codeproject.com</a></span>)
-                    </div>
+                    Made By Abhinay and Mansi
                     <br />
-                    <div>
-                        <img src="img/Bob.png" class="bob" />
-                    </div>
+
                 </div>
             }
             else
@@ -70,7 +66,9 @@
                     <div>NEXT</div>
                     <div>
                         <div class="statsLine next-piece piece-rows-@nextRows piece-columns-@nextColumns">
-                            <BricksBoard Bricks="@boardViewModel.Next" />
+
+                             <BricksBoard Bricks="@boardViewModel.Next" />
+
                         </div>
                     </div>
                 </div>

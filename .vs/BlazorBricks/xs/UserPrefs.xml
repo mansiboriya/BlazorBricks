@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{C5769535-DC63-4D29-B057-1CE88BA9175F}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Shared/NavMenu.cshtml">
+    <Files>
+      <File FileName="Pages/FetchData.cshtml" Line="24" Column="49" />
+      <File FileName="Pages/Index.cshtml" Line="76" Column="29" />
+      <File FileName="Shared/BricksBoard.cshtml" Line="2" Column="2" />
+      <File FileName="Shared/MainLayout.cshtml" Line="8" Column="1" />
+      <File FileName="Shared/NavMenu.cshtml" Line="6" Column="44" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.BlazorBricks PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

@@ -90,22 +90,12 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
-      },
-      "BlazorBricks.Core/1.4.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "compile": {
-          "bin/placeholder/BlazorBricks.Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/BlazorBricks.Core.dll": {}
-        }
       }
     }
   },
   "libraries": {
     "Microsoft.AspNetCore.Blazor/0.1.0": {
-      "sha512": "fO22yHG39ElmqAKQHxdZfg7zrRgZc/Roj/sVg2tx8Yd0BkBM/aIcMvX7uP6lKZMIlTXcsK9DjNS/IvC8w7I3vQ==",
+      "sha512": "Swu83aVcKJPSE485m0/bkWQGIRGH/tngUoisK/gizP29tsP8FW0s6bnzxlSW9LsE/zHeG9ud4xVt0GpwHH0Wxg==",
       "type": "package",
       "path": "microsoft.aspnetcore.blazor/0.1.0",
       "files": [
@@ -117,7 +107,7 @@
       ]
     },
     "Microsoft.AspNetCore.Blazor.Browser/0.1.0": {
-      "sha512": "ecktKdounLa8rxjTtouyp4oRV8YTqgJvoG+ejgD3ZBE39zvPPyw9q5LPe1ijeww1xCcq7Y+kVtHv+uNDdfCc/A==",
+      "sha512": "8BoNT2URrmVeZt/I3pneinqk3F+PsNtMgraQPg57N/VYLo2hOHWJuOnL3WRKObFPQft1n0Rsw6yvjyGv+zTjMQ==",
       "type": "package",
       "path": "microsoft.aspnetcore.blazor.browser/0.1.0",
       "files": [
@@ -129,10 +119,9 @@
       ]
     },
     "Microsoft.AspNetCore.Blazor.Build/0.1.0": {
-      "sha512": "6afvL26ELKBGhUhso578BrH7Z6anu1heuGzY3EXLdaearANz/QQpwC3NUKqnRLaUm4s+TjvURHID+veTZxJDLQ==",
+      "sha512": "m1DqNpo9ZO0H4Dm3t8cy6EddBcDb3oqRFaT6U0wMn+lwH4x19/tMvXRJ35ldZ34QZLXVVYfwuQGERZfXEgk9/Q==",
       "type": "package",
       "path": "microsoft.aspnetcore.blazor.build/0.1.0",
-      "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -368,10 +357,9 @@
       ]
     },
     "Microsoft.AspNetCore.Razor.Design/2.1.0-preview2-30230": {
-      "sha512": "6a2yemjDm7xGaJTLKMWdYq58iHFzANv2tKuJS01Pd+8wdowCT2t9t+RmMic3dGf+kUiWaDAtewrYOcgoihZgeg==",
+      "sha512": "uP7UosixBdYRrSBYX7RvamhtA4l3uMI472MUSfvs4XwnNMsR0OCF6xwMiml7MDnXimA3TXCZFSmkfGRjd+34LQ==",
       "type": "package",
       "path": "microsoft.aspnetcore.razor.design/2.1.0-preview2-30230",
-      "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -560,16 +548,10 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
-    },
-    "BlazorBricks.Core/1.4.0": {
-      "type": "project",
-      "path": "../BlazorBricks.Core/BlazorBricks.Core.csproj",
-      "msbuildProject": "../BlazorBricks.Core/BlazorBricks.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "BlazorBricks.Core >= 1.4.0",
       "Microsoft.AspNetCore.Blazor.Browser >= 0.1.0",
       "Microsoft.AspNetCore.Blazor.Build >= 0.1.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.0-preview2-30230",
@@ -583,17 +565,17 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mansiboriya/Downloads/BlazorBricks/BlazorBricks/BlazorBricks.csproj",
+      "projectUniqueName": "/Users/mansiboriya/GitHub/Bricks-App-Blazor-C-/BlazorBricks.csproj",
       "projectName": "BlazorBricks",
-      "projectPath": "/Users/mansiboriya/Downloads/BlazorBricks/BlazorBricks/BlazorBricks.csproj",
+      "projectPath": "/Users/mansiboriya/GitHub/Bricks-App-Blazor-C-/BlazorBricks.csproj",
       "packagesPath": "/Users/mansiboriya/.nuget/packages/",
-      "outputPath": "/Users/mansiboriya/Downloads/BlazorBricks/BlazorBricks/obj/",
+      "outputPath": "/Users/mansiboriya/GitHub/Bricks-App-Blazor-C-/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/mansiboriya/.nuget/NuGet/NuGet.Config"
+        "/Users/mansiboriya/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
@@ -603,11 +585,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {
-            "/Users/mansiboriya/Downloads/BlazorBricks/BlazorBricks.Core/BlazorBricks.Core.csproj": {
-              "projectPath": "/Users/mansiboriya/Downloads/BlazorBricks/BlazorBricks.Core/BlazorBricks.Core.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

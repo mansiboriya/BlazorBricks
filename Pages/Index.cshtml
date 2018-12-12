@@ -33,7 +33,6 @@
         </nav>
         <main>
 
-
             @if (BlazorBricks.Core.GameManager.Instance.Presenter.IsGameOver)
             {
                 <div>
@@ -43,11 +42,13 @@
                     <br />
                     <br />
                     <br />
-                    <div>BRICKS Game Using Blazor</div>
-                    <div>Enjoy!!</div>
+                    <div>Bricks Game made using Blazor</div>
+                    <div>By Abhinay and Mansi</div>
                     <br />
                     <br />
-                    Made By Abhinay and Mansi
+                    <div>
+                       ENJOYYYYY!!!! <br />
+                    </div>
                     <br />
 
                 </div>
@@ -66,9 +67,7 @@
                     <div>NEXT</div>
                     <div>
                         <div class="statsLine next-piece piece-rows-@nextRows piece-columns-@nextColumns">
-
-                             <BricksBoard Bricks="@boardViewModel.Next" />
-
+                            <BricksBoard Bricks="@boardViewModel.Next" />
                         </div>
                     </div>
                 </div>

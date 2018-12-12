@@ -565,11 +565,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mansiboriya/GitHub/Bricks-App-Blazor-C-/BlazorBricks.csproj",
+      "projectUniqueName": "/Users/mansiboriya/GitHub/BlazorBricks/BlazorBricks.csproj",
       "projectName": "BlazorBricks",
-      "projectPath": "/Users/mansiboriya/GitHub/Bricks-App-Blazor-C-/BlazorBricks.csproj",
+      "projectPath": "/Users/mansiboriya/GitHub/BlazorBricks/BlazorBricks.csproj",
       "packagesPath": "/Users/mansiboriya/.nuget/packages/",
-      "outputPath": "/Users/mansiboriya/GitHub/Bricks-App-Blazor-C-/obj",
+      "outputPath": "/Users/mansiboriya/GitHub/BlazorBricks/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

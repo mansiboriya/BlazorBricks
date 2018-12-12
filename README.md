@@ -1,4 +1,4 @@
-# Bricks-App-Blazor-C-
+# Bricks-App Using Blaazor
 Web App for Bricks Game using Webassembly for Blazor and C#.
 
 In order to run the app,
@@ -10,4 +10,4 @@ Once done.
 >CD into the repository
 
 Once into the directory
->ditnet run
+>dotnet run

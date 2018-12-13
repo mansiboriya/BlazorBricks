@@ -1,4 +1,0 @@
-/Users/mansiboriya/.nuget/packages/microsoft.aspnetcore.blazor/0.1.0/lib/netstandard2.0/Microsoft.AspNetCore.Blazor.dll
-/Users/mansiboriya/.nuget/packages/microsoft.aspnetcore.blazor.browser/0.1.0/lib/netstandard2.0/Microsoft.AspNetCore.Blazor.Browser.dll
-/Users/mansiboriya/.nuget/packages/microsoft.extensions.dependencyinjection/2.0.0/lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll
-/Users/mansiboriya/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/2.0.0/lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll

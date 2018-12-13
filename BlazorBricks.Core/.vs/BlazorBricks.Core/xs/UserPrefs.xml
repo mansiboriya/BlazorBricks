@@ -1,0 +1,20 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="IBricksArray.cs">
+    <Files>
+      <File FileName="BaseBricksArray.cs" Line="1" Column="1" />
+      <File FileName="Brick.cs" Line="1" Column="1" />
+      <File FileName="BricksBoard.cs" Line="1" Column="1" />
+      <File FileName="BricksPresenter.cs" Line="1" Column="1" />
+      <File FileName="GameManager.cs" Line="1" Column="1" />
+      <File FileName="IBoard.cs" Line="1" Column="1" />
+      <File FileName="IBrick.cs" Line="1" Column="1" />
+      <File FileName="IBricksArray.cs" Line="14" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

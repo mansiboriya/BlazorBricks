@@ -1,10 +1,5 @@
-﻿<Properties StartupConfiguration="{03D89BCA-19CC-4B76-A3C8-869ABA98CEDB}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BlazorBricks/Shared/Brick.cshtml">
-    <Files>
-      <File FileName="BlazorBricks/Pages/FetchData.cshtml" Line="1" Column="1" />
-      <File FileName="BlazorBricks/Shared/Brick.cshtml" Line="7" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+﻿<Properties StartupConfiguration="{C5769535-DC63-4D29-B057-1CE88BA9175F}|Default">
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

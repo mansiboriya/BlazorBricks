@@ -1,4 +1,4 @@
-# Bricks-App Using Blaazor
+# Bricks-App Madr Using Blazor
 Web App for Bricks Game using Webassembly for Blazor and C#.
 
 In order to run the app,
